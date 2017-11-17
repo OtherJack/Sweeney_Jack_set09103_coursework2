@@ -14,6 +14,10 @@ def ms():
 def qt():
   return render_template('QT.html'),200
 
+@app.route('/DenisVilleneuve')
+def dv():
+  return render_template('DV.html'),200
+
 @app.route('/config/')
 def config():
   str = []
