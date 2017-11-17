@@ -10,6 +10,10 @@ def root():
 def ms():
   return render_template('MS.html'), 200
 
+@app.route('/QuentinTarantino')
+def qt():
+  return render_template('QT.html'),200
+
 @app.route('/config/')
 def config():
   str = []
