@@ -6,6 +6,10 @@ app = Flask(__name__)
 def root():
   return render_template('index.html'), 200
 
+@app.route('/MartinScorsese')
+def ms():
+  return render_template('MS.html'), 200
+
 @app.route('/config/')
 def config():
   str = []
