@@ -14,7 +14,7 @@
  src="{{ url_for('static', filename='bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
   <style>
     body{
-        padding-top:50px; 
+        padding-top:70px; 
         background-color:#89DA59;
         }
     .nav p{
@@ -84,13 +84,33 @@
     <div class="col-sm-10">
   <h1>Martin Scorsese</h1>
   <br>
+  <p class="lead">Born November 17th 1942 Martin Scorsese is a well known
+  director mainly known for: Raging Bull(1980), Goodfellas(1990) and Gangs of
+  New York(2002)</p>
   </div>
 <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle
-img-responsive" src="static/MS/MS.jpg" alt="Martin Scorsese">
+img-responsive" src="static/ms/ms.jpg" alt="Martin Scorsese">
 </div>
 </div>
 
 <br>
+
+<div class="col-sm-10">
+  <h3>Related Pages:</h3>
+  <br>
+  <div class="container">
+    <div class="row imagetiles">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <img src="static/ms/wolf.jpg" alt="Wolf of Wall Street" class="img-responsive">
+      <a href="/MartinScorsese/TheWolfOfWallstreet">The Wolf of Wall Street</a>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <img src="static/ms/good.jpg" alt="Goodfellas" class="img-responsive">
+      <a href="/MartinScorsese/Goodfellas">Goodfellas</a>
+      </div>
+  </div>
+</div>
 
 </body>
 </html>
