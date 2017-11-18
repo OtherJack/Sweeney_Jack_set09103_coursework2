@@ -6,17 +6,30 @@ app = Flask(__name__)
 def root():
   return render_template('index.html'), 200
 
+
 @app.route('/MartinScorsese')
 def ms():
   return render_template('MS.html'), 200
+
+@app.route('/MartinScorsese/TheWolfOfWallStreet')
+def wolf():
+  return render_template('wolf.html'),200
+
 
 @app.route('/QuentinTarantino')
 def qt():
   return render_template('QT.html'),200
 
+
 @app.route('/DenisVilleneuve')
 def dv():
   return render_template('DV.html'),200
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+  return render_template('404.html'),404
+
 
 @app.route('/config/')
 def config():

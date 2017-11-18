@@ -14,7 +14,7 @@
  src="{{ url_for('static', filename='bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
   <style>
     body{
-        padding-top:70px; 
+        padding-top:50px; 
         background-color:#89DA59;
         }
     .nav p{
@@ -30,15 +30,16 @@
   <div class="container-fluid">
     <div class="navbar-header">
      
-      <a class="navbar-brand">Movie Database</a>
+      <a class="navbar-brand" href='#'>Movie Database</a>
     </div>
 
     <ul class="nav navbar-nav">
-      <li><a href="/">Home</a></li>
+      
+      <li class="active"><a href="/">Home</a></li>
 
       <p class="navbar-text">Featured Directors:</p>
 
-      <li class="dropdown active">
+      <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Martin Scorsese
         <span class="caret"></span></a>
 
@@ -78,40 +79,8 @@
 </nav>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-10">
-  <h1>Martin Scorsese</h1>
-  <br>
-  <p class="lead">Born November 17th 1942 in Queens, New York City, Martin Scorsese is a well known
-  director mainly known for: Raging Bull(1980), Goodfellas(1990) and Gangs of
-  New York(2002)</p>
-  
-  <br>
-  <h2>Related Pages:</h2>
-  </div>
-<div class="col-sm-2"><a href="#" class="pull-right"><img title="profile image" class="img-circle
-img-responsive" src="static/ms/ms2.jpg" alt="Martin Scorsese">
-</div>
-</div>
-
-<br>
-
-<div class="container">
-<div class="col-sm-10">
-  
-  <br>
-  
-    <div class="row imagetiles">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-      <a href="/MartinScorsese/TheWolfOfWallStreet">The Wolf of Wall Street</a>
-      <img src="static/ms/wolf2.jpg" alt="Wolf of Wall Street" class="img-responsive">
-      </div>
-
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-      <a href="/MartinScorsese/Goodfellas">Goodfellas</a>
-      <img src="static/ms/good2.jpg" alt="Goodfellas" class="img-responsive">
-      </div>
-  </div>
+  <h1>Cannot find the page you are looking for</h1>
+  <p class="lead">Sorry about that...</p>
 </div>
 
 </body>
