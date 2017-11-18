@@ -14,7 +14,7 @@
  src="{{ url_for('static', filename='bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
   <style>
     body{
-        padding-top:70px; 
+        padding-top:50px; 
         background-color:#89DA59;
         }
     .nav p{
@@ -30,10 +30,11 @@
   <div class="container-fluid">
     <div class="navbar-header">
      
-      <a class="navbar-brand">Movie Database</a>
+      <a class="navbar-brand" href=''>Movie Database</a>
     </div>
 
     <ul class="nav navbar-nav">
+      
       <li><a href="/">Home</a></li>
 
       <p class="navbar-text">Featured Directors:</p>
@@ -67,9 +68,9 @@
         <span class="caret"></span></a>
         
         <ul class="dropdown-menu">
-          <li class="active"><a href="/DenisVilleneuve">Director Bio</a></li>
+          <li><a href="/DenisVilleneuve">Director Bio</a></li>
           <li><a href="/DenisVilleneuve/BladeRunner2049">Blade Runner: 2049</a></li>
-          <li><a href="/DenisVilleneuve/Arrival">Arrival</a></li>
+          <li class="active"><a href="/DenisVilleneuve/Arrival">Arrival</a></li>
         </ul>
       </li>
     
@@ -78,39 +79,36 @@
 </nav>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-10">
-  <h1>Denis Villeneuve</h1>
-  <br>
-  <p class="lead">Born October 3rd 1967 in Quebec, Canada, Denis
-  Villeneuve is a well known director best known for Prisoners(2013),
-  Sicario(2015) and Arrival(2016)</p>
   
-  <br>
-  <h2>Related Pages:</h2>
-  </div>
-<div class="col-sm-2"><a href="" class="pull-right"><img title="profile image" class="img-circle
-img-responsive" src="{{ url_for('static', filename='dv/dv2.jpg') }}" alt="Denis Villeneuve">
-</div>
-</div>
+    <h1>Arrival</h1>
+    <img src="{{ url_for('static', filename='dv/arrivalPage.jpeg') }}" alt="poster"
+    class="img responsive" width="50%">
 
 <br>
-
-<div class="container">
-<div class="col-sm-10">
-  
-  <br>
-  
-    <div class="row imagetiles">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-      <a href="/DenisVilleneuve/BladeRunner2049">BladeRunner: 2049</a>
-      <img src="{{ url_for('static', filename='dv/blade.jpg') }}" alt="Blade Runner" class="img-responsive">
-      </div>
-
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-      <a href="/DenisVilleneuve/Arrival">Arrival</a>
-      <img src="{{ url_for('static', filename='dv/arrival2.jpg') }}" alt="Arrival" class="img-responsive">
-      </div>
+    <table class="table table-condensed">
+      <tbody>
+        <tr>
+          <td>Cast:</td>
+          <td>Amy Adams, Jeremy Renner </td>
+        </tr>
+        <tr>
+          <td>Director:</td>
+          <td>Denis Villeneuve</td>
+        <tr>
+          <td>Year:</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td>IMDb rating:</td>
+          <td>8.0/10</td>
+        </tr>
+      </tbody>
+    </table>
+<br>
+  <p class="lead">When 12 mysterious spacecrafts appear around the world,
+  linguistics professor Louise Banks is tasked with interpreting the language
+  of the apparent alien visitors</p>
+<br>
   </div>
 </div>
 

@@ -43,7 +43,7 @@
         <span class="caret"></span></a>
 
         <ul class="dropdown-menu">
-          <li><a href="/MartinScorsese">Director  Bio</a></li>
+          <li class="active"><a href="/MartinScorsese">Director  Bio</a></li>
           <li><a href="/MartinScorsese/TheWolfOfWallStreet">The Wolf of Wall Street</a></li>
           <li><a href="/MartinScorsese/Goodfellas">Goodfellas</a></li>
         </ul>
@@ -89,8 +89,8 @@
   <br>
   <h2>Related Pages:</h2>
   </div>
-<div class="col-sm-2"><a href="#" class="pull-right"><img title="profile image" class="img-circle
-img-responsive" src="static/ms/ms2.jpg" alt="Martin Scorsese">
+<div class="col-sm-2"><a href="" class="pull-right"><img title="profile image" class="img-circle
+img-responsive" src="{{ url_for('static', filename='ms/ms2.jpg') }}" alt="Martin Scorsese">
 </div>
 </div>
 
@@ -104,12 +104,12 @@ img-responsive" src="static/ms/ms2.jpg" alt="Martin Scorsese">
     <div class="row imagetiles">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
       <a href="/MartinScorsese/TheWolfOfWallStreet">The Wolf of Wall Street</a>
-      <img src="static/ms/wolf2.jpg" alt="Wolf of Wall Street" class="img-responsive">
+      <img src="{{ url_for('static', filename='ms/wolf2.jpg') }}" alt="Wolf of Wall Street" class="img-responsive">
       </div>
 
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
       <a href="/MartinScorsese/Goodfellas">Goodfellas</a>
-      <img src="static/ms/good2.jpg" alt="Goodfellas" class="img-responsive">
+      <img src="{{ url_for('static', filename='ms/good2.jpg') }}" alt="Goodfellas" class="img-responsive">
       </div>
   </div>
 </div>

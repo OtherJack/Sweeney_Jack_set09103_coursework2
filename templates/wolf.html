@@ -30,7 +30,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
      
-      <a class="navbar-brand" href='#'>Movie Database</a>
+      <a class="navbar-brand" href=''>Movie Database</a>
     </div>
 
     <ul class="nav navbar-nav">
@@ -45,8 +45,8 @@
 
         <ul class="dropdown-menu">
           <li><a href="/MartinScorsese">Director  Bio</a></li>
-          <li><a href="/WolfOfWallStreet">The Wolf of Wall Street</a></li>
-          <li><a href="/Goodfellas">Goodfellas</a></li>
+          <li class="active"><a href="/MartinScorsese/TheWolfOfWallStreet">The Wolf of Wall Street</a></li>
+          <li><a href="/MartinScorsese/Goodfellas">Goodfellas</a></li>
         </ul>
       </li>
 
@@ -79,9 +79,11 @@
 </nav>
 
 <div class="container">
-  <h1>The Wolf of Wall Street</h1>
-  
 
+  <h1>The Wolf of Wall Street</h1>
+  <img src="{{ url_for('static', filename='ms/wolfpage.jpg') }}" alt="poster"
+  class="img responsive" width="50%">
+  
 <br>
     <table class="table table-condensed">
       <tbody>
@@ -102,6 +104,12 @@
         </tr>
       </tbody>
     </table>
+<br>
+  <p class="lead">Based on the true story of Jordan Belfort, from his rise to a
+  wealthy stock-broker living the high life to his fall involving crime,
+  corruption and the federal government</p>
+<br>
+
   </div>
 </div>
 

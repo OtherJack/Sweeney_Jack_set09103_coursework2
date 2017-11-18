@@ -80,8 +80,33 @@
 
 <div class="container">
   <h1>Welcome to our  movie database</h1>
-  <p class="lead">Please select one of our featured directors from the toolbar</p>
-</div>
+  <p class="lead">Check out one of our featured directors from the toolbar</p>
+
+<br>
+  <div class="row imagetiles">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <img src="{{ url_for('static', filename='dv/blade.jpg') }}" alt="poster"
+    class="img responsive" height="50%"><br>
+    <a href="/DenisVilleneuve/BladeRunner2049">More Info</a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <img src="{{ url_for('static', filename='qt/hate.jpg') }}" alt="poster"
+    class="img responsive" height="50%"><br>
+    <a href="/QuentinTarantino/TheHateful8">More Info</a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <img src="{{ url_for('static', filename='ms/wolf2.jpg') }}" alt="poster"
+    class="img responsive" height="50%"><br>
+    <a href="/MartinScorsese/TheWolfOfWallStreet">More Info</a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <img src="{{ url_for('static', filename='dv/arrival2.jpg') }}" alt="poster"
+    class="img responsive" height="50%"><br>
+    <a href="/DenisVilleneuve/Arrival">MoreInfo</a>
+  </div>
 
 </body>
 </html>

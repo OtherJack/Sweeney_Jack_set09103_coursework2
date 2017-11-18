@@ -13,17 +13,37 @@ def ms():
 
 @app.route('/MartinScorsese/TheWolfOfWallStreet')
 def wolf():
-  return render_template('wolf.html'),200
+  return render_template('wolf.html'), 200
+
+@app.route('/MartinScorsese/Goodfellas')
+def good():
+  return render_template('good.html'), 200
 
 
 @app.route('/QuentinTarantino')
 def qt():
   return render_template('QT.html'),200
 
+@app.route('/QuentinTarantino/TheHateful8')
+def hate():
+  return render_template('hate.html'), 200
+
+@app.route('/QuentinTarantino/PulpFiction')
+def pulp():
+  return render_template('pulp.html'), 200
+
 
 @app.route('/DenisVilleneuve')
 def dv():
   return render_template('DV.html'),200
+
+@app.route('/DenisVilleneuve/BladeRunner2049')
+def blade():
+  return render_template('blade.html'), 200
+
+@app.route('/DenisVilleneuve/Arrival')
+def arrival():
+  return render_template('arrival.html'), 200
 
 
 @app.errorhandler(404)
