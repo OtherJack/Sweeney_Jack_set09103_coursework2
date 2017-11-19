@@ -83,30 +83,53 @@
   <p class="lead">Check out one of our featured directors from the toolbar</p>
 
 <br>
-  <div class="row imagetiles">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-    <img src="{{ url_for('static', filename='dv/blade.jpg') }}" alt="poster"
-    class="img responsive" height="50%"><br>
-    <a href="/DenisVilleneuve/BladeRunner2049">More Info</a>
+<div id="myCarousel" height="50%" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{{ url_for('static', filename='dv/arrivalPage.jpeg') }}" alt="poster"
+      class="img responsive">
+      <div class="carousel-caption">
+        <h3>Blade Runner: 2049</h3>
+        <a href="/DenisVilleneuve/BladeRunner2049">More Info</a>
+      </div>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-    <img src="{{ url_for('static', filename='qt/hate.jpg') }}" alt="poster"
-    class="img responsive" height="50%"><br>
-    <a href="/QuentinTarantino/TheHateful8">More Info</a>
+    <div class="item">
+      <img src="{{ url_for('static', filename='ms/wolfpage.jpg') }}" alt="poster"
+      class="img responsive">
+      <div class="carousel-caption">
+        <h3>Wolf of Wall Street</h3>
+        <a href="/MartinScorsese/TheWolfOfWallStreet">More Info</a>
+      </div>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-    <img src="{{ url_for('static', filename='ms/wolf2.jpg') }}" alt="poster"
-    class="img responsive" height="50%"><br>
-    <a href="/MartinScorsese/TheWolfOfWallStreet">More Info</a>
+    <div class="item">
+      <img src="{{ url_for('static', filename='qt/hateful.jpeg') }}" alt="poster"
+      class="img responsive">
+      <div class="carousel-caption">
+        <h3>Hateful 8</h3>
+        <a href="/QuentinTarantino/TheHateful8">More Info</a>
+      </div>
     </div>
-
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-    <img src="{{ url_for('static', filename='dv/arrival2.jpg') }}" alt="poster"
-    class="img responsive" height="50%"><br>
-    <a href="/DenisVilleneuve/Arrival">MoreInfo</a>
   </div>
+
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">Previous</span>
+</a>
+
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
 
 </body>
 </html>
