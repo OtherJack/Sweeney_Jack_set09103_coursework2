@@ -79,58 +79,9 @@
 </nav>
 
 <div class="container">
-  <h1>Welcome to our  movie database</h1>
-  <p class="lead">Check out one of our featured directors from the toolbar</p>
-  <p class="lead">Or check out our featured films <a href="/FeaturedFilms">Here(Beta)</a></p>
 
-<br>
-<div id="myCarousel" height="50%" class="carousel slide" data-ride="carousel">
+  
 
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="{{ url_for('static', filename='dv/arrivalcarousel.jpg') }}" alt="poster"
-      class="img responsive">
-      <div class="carousel-caption">
-        <h3>Arrival</h3>
-        <a href="/DenisVilleneuve/Arrival">More Info</a>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="{{ url_for('static', filename='ms/wolfpage.jpg') }}" alt="poster"
-      class="img responsive">
-      <div class="carousel-caption">
-        <h3>Wolf of Wall Street</h3>
-        <a href="/MartinScorsese/TheWolfOfWallStreet">More Info</a>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="{{ url_for('static', filename='qt/hateful.jpeg') }}" alt="poster"
-      class="img responsive">
-      <div class="carousel-caption">
-        <h3>Hateful 8</h3>
-        <a href="/QuentinTarantino/TheHateful8">More Info</a>
-      </div>
-    </div>
-  </div>
-
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left"></span>
-  <span class="sr-only">Previous</span>
-</a>
-
-<a class="right carousel-control" href="#myCarousel" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-  <span class="sr-only">Next</span>
-</a>
 </div>
-
 </body>
 </html>
