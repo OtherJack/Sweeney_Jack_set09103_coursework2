@@ -51,7 +51,7 @@ def films():
 
 @app.route('/')
 def root():
-  return render_template('index.html'), 200
+  return render_template('index.html'), 404
 
 
 @app.route('/MartinScorsese')
